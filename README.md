@@ -21,7 +21,7 @@ ________________________________________________________________________________
 
 ### Dependencies
 No dependency for library function, however examples have the following dependencies:
-* autoDelay_library available from [here](https://github.com/PanGalacticTech/autoDelay_Library) - written by PanGalacticTech
+* autoDelay_library available from [here](https://github.com/ImogenWren/autoDelay_Library) - written by ImogenWren
 ___________________________________________________________________________________________________________
 
 ## Use:
