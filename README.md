@@ -1,5 +1,5 @@
 # ledObject *(V2.0.0)*
-#### Built and maintained by [Imogen Wren](mailto:pangalactictech@gmail.com "Email me!") on behalf of [Pan Galactic Tech](https://PanGalacticTech.com)
+#### Built and maintained by [Imogen Wren](mailto:Imogen.Wren91@gmail.com)
 
 ## Features
 * Object Orientated library for controling single LEDs.
