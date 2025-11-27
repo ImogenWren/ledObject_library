@@ -223,7 +223,7 @@ class fadeLED: public ledObject {
 
 
 
-    void advancedFade(byte startBrightness, byte endBrightness, uint32_t timeOne, uint32_t timeTwo, int repeats);
+    int32_t advancedFade(uint8_t startBrightness, uint8_t endBrightness, uint32_t timeOne, uint32_t timeTwo, int16_t repeats);
 
 
 
