@@ -263,7 +263,14 @@ void fadeLED::performFades() {
 }
 
 
-void fadeLED::advancedFade(byte startBrightness, byte endBrightness, uint32_t timeOne, uint32_t timeTwo, int repeats) {};   // Future implementation will cover this method
+void fadeLED::advancedFade(uint8_t startBrightness, uint8_t endBrightness, uint32_t timeOne, uint32_t timeTwo, int16_t repeats){  // Future implementation will cover this method
+// all this is here just to silence compiler warnings before I can build the correct functionality
+	uint8_t brightness = startBrightness;
+	brightness = endBrightness;
+	uint32_t timer = timeOne;
+	timer = timeTwo;
+	int16_t repeat = repeats;	
+};   
 
 
 

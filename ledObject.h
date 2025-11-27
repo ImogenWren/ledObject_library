@@ -85,12 +85,12 @@ class ledObject
 
 
 
-    unsigned long currentAction = 0;    // Global variables to hold the time of the current, and the previous timed actions
-    unsigned long lastAction = 0;
+    uint32_t currentAction = 0;    // Global variables to hold the time of the current, and the previous timed actions
+    uint32_t lastAction = 0;
 
     int blinkQuantity;              // Global Variables used for blink events
-    long blinkOnDuration;
-    long blinkOffDuration;
+    uint32_t blinkOnDuration;
+    uint32_t blinkOffDuration;
 	
 	bool defaultLEDstate = false;
 
@@ -140,7 +140,7 @@ class fadeLED: public ledObject {
 
 
 #ifdef __AVR__ 
-#pragma message("Compiled for AVR")
+//#pragma message("Compiled for AVR")
     fadeLED(int pwm_Pin): ledObject(pwm_Pin),    // Not 100% sure this is correct syntax, we will see
       pwmPin(pwm_Pin)                         // Passed pwm_Pin during constructor now.
     {
