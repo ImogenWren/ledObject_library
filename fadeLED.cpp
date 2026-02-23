@@ -32,7 +32,9 @@ void fadeLED::setup(byte startBrightness) {
 #ifdef __AVR__
   pinMode(pwmPin, OUTPUT);                          // Set PWM pin to output
 #elif defined(ESP8266) || defined(ESP32)
-  ledcSetup(ledCH, frequency, resolution); ledcAttachPin(pwmPin, ledCH);
+ // ledcSetup(ledCH, frequency, resolution); //? depreciated?
+ // ledcAttachPin(pwmPin, ledCH);            // ? depreciated?
+  ledcAttach(pwmPin, frequency, resolution);
 #else
   pinMode(pwmPin, OUTPUT);                          // Selse try this again!
 #endif
